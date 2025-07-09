@@ -1,0 +1,16 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+        "build": "tsc -p .",
+        "start": "node dist/index.js",
+        "lint": "eslint . --max-warnings 0",
+        "check-types": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "tsc-watch": "^7.1.1",
+        "typescript": "^5.8.3"
+    }
+}
